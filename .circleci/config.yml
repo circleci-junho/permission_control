@@ -17,8 +17,10 @@ jobs:
           command: echo "Success!" 
 
 workflows:
-  build-hold-deploy:
+  build-permission-deploy:
     jobs:
       - build
       - deploy:
           context: permission
+          requires:
+            - build
