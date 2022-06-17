@@ -13,4 +13,4 @@ You can easily control your permission to run the pipeline by setting up `Github
   The default security group is for `All members`, you should delete it to restrict the pipeline.
 ![](./img/03.png)
 
-3. [Set workflows](./.circleci/config.yml) to use `Contexts`
+3. [Set workflows](./.circleci/config.yml#L24) to use `Contexts`
