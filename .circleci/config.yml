@@ -7,8 +7,10 @@ jobs:
     steps:
       - checkout
       - run:
-          name: "Say hello"
+          command: sleep 100
+      - run:
           command: "echo Hello, World!"
+          when: always
 
 workflows:
   say-hello-workflow:
