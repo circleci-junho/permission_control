@@ -1,6 +1,6 @@
 # How to restrict particular pipeline in CircleCI by user
 This repository shows `How to restrict particular pipeline in CircleCI by user`.  
-I suggest restricting pipelines to combine `CircleCI Organization Settings Contexts` and `Github Teams`.  
+I suggest to combine `CircleCI Organization Settings Contexts` and `Github Teams`.  
 You can easily control your permission to run the pipeline by setting up `Github Teams` as a security group to Contexts.
 
 ![](./img/01.png)
