@@ -6,7 +6,7 @@ jobs:
       - image: cimg/base:stable
     steps:
       - run:
-          command: curl --request GET --url 'https://circleci.com/api/v2/project/github/circleci-junho/permission_control/pipeline' --header 'authorization:e0be7aac02f7d6028092a57e02485903bc2e913f' | jq '.items[0].state'
+          command: curl --request GET --url 'https://circleci.com/api/v2/project/github/circleci-junho/permission_control/pipeline' --header 'authorization:e0be7aac02f7d6028092a57e02485903bc2e913f' | jq '.items'
 
   deploy:
     docker:
