@@ -6,7 +6,7 @@ jobs:
       - image: cimg/base:stable
     steps:
       - run:
-          command: echo /fail
+          command: curl hoges213123.com
 
   deploy:
     docker:
