@@ -7,7 +7,7 @@ jobs:
     steps:
       - run:
           name: fail command
-          command: ./file_does_not_exit
+          command: sleep 30
 
   deploy:
     docker:
@@ -19,10 +19,12 @@ jobs:
       - run:
           name: run when deploy workflow fail
           command: echo "It is on_fail step of deploy workflow"
-          when: on_fail
+          when: always
 
 workflows:
   build-permission-deploy:
     jobs:
       - build
-      - deploy
+      - deploy:
+          requires:
+            - build
