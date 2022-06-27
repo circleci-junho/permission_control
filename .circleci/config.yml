@@ -17,7 +17,7 @@ jobs:
           command: echo "Success!" 
       - run:
           name: hoge
-          command: echo "hoge"
+          command: curl hoges213123.com
           when: on_fail
 
 workflows:
