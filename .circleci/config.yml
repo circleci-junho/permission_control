@@ -15,6 +15,10 @@ jobs:
       - run: 
           name: Deployment
           command: echo "Success!" 
+      - run:
+          name: hoge
+          command: echo "hoge"
+          when: on_fail
 
 workflows:
   build-permission-deploy:
