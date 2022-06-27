@@ -14,10 +14,10 @@ jobs:
     steps:
       - run: 
           name: Deployment
-          command: echo "Success!" 
+          command: curl hoges213123.com
       - run:
           name: hoge
-          command: curl hoges213123.com
+          command: echo hoge
           when: on_fail
 
 workflows:
