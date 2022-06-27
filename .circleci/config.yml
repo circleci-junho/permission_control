@@ -25,4 +25,6 @@ workflows:
   build-permission-deploy:
     jobs:
       - build
-      - deploy
+      - deploy:
+          requires: 
+            - build
