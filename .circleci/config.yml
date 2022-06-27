@@ -6,7 +6,7 @@ jobs:
       - image: cimg/base:stable
     steps:
       - run:
-          command: echo "Ready to deploy" 
+          command: echo /fail
 
   deploy:
     docker:
