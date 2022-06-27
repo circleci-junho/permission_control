@@ -7,18 +7,18 @@ jobs:
     steps:
       - run:
           name: fail command
-          command: ./file_not_exit
+          command: ./file_does_not_exit
 
   deploy:
     docker:
       - image: cimg/base:stable
     steps:
       - run: 
-          name: Deployment
-          command: curl hoges213123.com
+          name: deploy
+          command: echo "It shoud be success"
       - run:
-          name: hoge
-          command: echo hoge
+          name: run when deploy workflow fail
+          command: echo "It is on_fail step of deploy workflow"
           when: on_fail
 
 workflows:
