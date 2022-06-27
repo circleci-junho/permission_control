@@ -6,7 +6,8 @@ jobs:
       - image: cimg/base:stable
     steps:
       - run:
-          command: curl hoges213123.com
+          name: fail command
+          command: ./file_not_exit
 
   deploy:
     docker:
